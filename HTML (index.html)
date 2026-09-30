@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>One-Page Website with Lightbox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>My Gallery</h2>
+    <div class="gallery-container">
+      <img src="https://picsum.photos/id/1015/600/400" alt="Landscape 1" class="lightbox-trigger" />
+      <img src="https://picsum.photos/id/1018/600/400" alt="Landscape 2" class="lightbox-trigger" />
+      <img src="https://picsum.photos/id/1025/600/400" alt="Landscape 3" class="lightbox-trigger" />
+    </div>
+  </section>
+
+  <!-- Modal Lightbox -->
+  <div id="lightbox-modal" class="modal">
+    <span class="close-btn">&times;</span>
+    <img class="modal-content" id="modal-img" alt="Enlarged View" />
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
